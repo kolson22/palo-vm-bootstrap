@@ -1,0 +1,11 @@
+type=static
+ip-address={{ address }}
+default-gateway={{ gateway }}
+netmask={{ mask }} {% if key is not none %}
+vm-auth-key={{ key }}{% endif %}
+hostname={{ hostname }}
+dns-primary=8.8.8.8
+dns-secondary=1.1.1.1
+vm-series-auto-registration-pin-id={{ id }}
+vm-series-auto-registration-pin-value={{ value }}
+
